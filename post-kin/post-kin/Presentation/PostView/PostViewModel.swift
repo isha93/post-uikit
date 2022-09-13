@@ -104,7 +104,6 @@ class PostViewModel {
                 if post.ownerID == user.id {
                     let fullName = [user.firstName, user.lastName].joined(separator: " ")
                     postUserData.append(PostUserData(post: post, user: user, fullName: fullName))
-                    print("ini postuserdata \(self.postUserData)")
                 }
             }
         }
@@ -113,7 +112,6 @@ class PostViewModel {
     func searchPost(searchText: String){
         let result = self.postUserData.filter({$0.fullName.contains(searchText) || $0.post.textContent.contains(searchText) })
         self.postUserData = result
-        print(result)
     }
     
     func getMatchTags(){
