@@ -41,5 +41,5 @@ add pagination
 
 ## Tech Stack
 
-**Client:** SwiftUI, MVVM, Async-await, URLSession, SPM
+**Client:** UIKIT, MVVM , COMBINE , SPM , KingFisher, Netfox
 
